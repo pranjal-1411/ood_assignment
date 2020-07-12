@@ -1,10 +1,17 @@
 package learnJava ;
 
 
-class gears{
-    private int chainring,corgs ;
-    gears( int chainring,int corgs ){ this.chainring = chainring; this.corgs = corgs ; }
-    double ratio(){  return chainring/corgs ;  }
+class gear{
+    private int chainring,corg ; 
+    gear( int chainring,int corg ){ this.chainring = chainring; this.corg = corg ; }
+    double ratio(){  return chainring/corg ;  }
+}
+
+class wheel{
+    private int rim,tire ; 
+    wheel( int rim,int tire ) {  this.rim=rim ; this.tire= tire ;  }
+    int diameter(){  return rim+tire*2 ;  }
+    double circumference() {  return diameter()*Math.PI ;}
 }
 
 public class ood{
